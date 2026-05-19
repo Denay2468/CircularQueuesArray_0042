@@ -8,7 +8,7 @@ private:
     int FRONT, REAR;
     int queue_array[max];
 public:
-    Queues()
+    Queue()
     {
         FRONT = -1;
         REAR = -1;
@@ -113,8 +113,9 @@ int main(){
     Queue q;
     char ch;
 
-    while (true)
-    {
+    try {
+        while (true)
+        {
             cout << "Menu" << endl;
             cout << "1. Implement insert operation" << endl;
             cout << "2. Implement Delete Operation" << endl;
@@ -152,10 +153,10 @@ int main(){
             }
             }
         }
-        catch (exception &e)
-        {
-            cout << "check for the values entered." << endl;
-        }
+    }
+    catch (exception &e)
+    {
+        cout << "check for the values entered." << endl;
     }
 
     return 0;
