@@ -57,5 +57,19 @@ public:
             FRONT = -1;
             REAR = -1;
         }
+
+        else
+        {
+            if (FRONT == max - 1)
+                FRONT = 0;
+            else
+                FRONT = FRONT + 1;
+        }
+    }
+
+    void display()
+    {
+        int FRONT_Position = FRONT;
+        int REAR_Position = REAR;
     }
 };
